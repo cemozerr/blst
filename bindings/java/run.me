@@ -31,7 +31,7 @@ case `uname -s` in
 esac
 
 if [ ! -f ../libblst.a -o ../blst.h -nt ../libblst.a ]; then
-    (cd ..; ../build.sh)
+    (cd ..; ../build.sh ‑D__BLST_PORTABLE__)
 fi
 
 if [ ! -f blst_wrap.cpp -o ../blst.swg -nt blst_wrap.cpp \
